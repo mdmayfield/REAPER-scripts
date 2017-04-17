@@ -29,7 +29,7 @@ length = (endtime - starttime)
 
 midiItem = reaper.CreateNewMIDIItemInProj(track, starttime, starttime + qnotetime)
 midiTake = reaper.GetActiveTake(midiItem)
-reaper.MIDI_InsertNote(midiTake, false, false, 0, 480, 1, note, 127)
+reaper.MIDI_InsertNote(midiTake, false, false, 0, 480, 0, note, 127)
 
 reaper.SetMediaItemInfo_Value(midiItem, "B_LOOPSRC", 1)
 reaper.SetMediaItemLength(midiItem, length, false)
