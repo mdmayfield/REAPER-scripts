@@ -29,13 +29,17 @@ length = (endtime - starttime)
 
 midiItem = reaper.CreateNewMIDIItemInProj(track, starttime, starttime + qnotetime)
 midiTake = reaper.GetActiveTake(midiItem)
-reaper.MIDI_InsertNote(midiTake, false, false, 0, 480, 0, note, 127)
+reaper.MIDI_InsertNote(midiTake, false, false, 0, 480, 1, note, 127)
 
 reaper.SetMediaItemInfo_Value(midiItem, "B_LOOPSRC", 1)
 reaper.SetMediaItemLength(midiItem, length, false)
 reaper.GetSetMediaItemTakeInfo_String(midiTake, 'P_NAME', note, true)
-itemColor = math.fmod(note,16)+1
-reaper.SetMediaItemTakeInfo_Value(midiTake, 'I_CUSTOMCOLOR', colors[itemColor])
+colorIndex = math.fmod(note,16)+1
+r = (colors[colorIndex] & 0x00ff0000) >> 16
+g = (colors[colorIndex] & 0x0000ff00) >> 8
+b = (colors[colorIndex] & 0x000000ff)
+itemColor = reaper.ColorToNative(r, g, b)
+reaper.SetMediaItemTakeInfo_Value(midiTake, 'I_CUSTOMCOLOR', itemColor|0x01000000)
 
 ::ending::
 
