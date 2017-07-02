@@ -1,37 +1,12 @@
-## Welcome to GitHub Pages
+## Test of GitHub Pages
 
-You can use the [editor on GitHub](https://github.com/mdmayfield/REAPER-scripts/edit/gh-pages/README.md) to maintain and preview the content for your website in Markdown files.
+This is a project site for the REAPER-scripts section of my GitHub account. GitHub seems to be the quickest and easiest way to experiment with Jekyll, the static site building tool:
+- They host and serve the pages
+- There's an automated Jekyll instance rendering the pages
+- Nothing to download, compile, or install
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## Downloads
 
-### Markdown
+Testing to see if this is how to offer raw files for download as in the case of my scripts in this project.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/mdmayfield/REAPER-scripts/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+[Automation Envelope 0 in Time Selection.lua](https://github.com/mdmayfield/REAPER-scripts/raw/master/Automation%20Envelope%200%20In%20Time%20Selection.lua)
