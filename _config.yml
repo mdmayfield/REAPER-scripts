@@ -1,3 +1,4 @@
 theme: jekyll-theme-leap-day
 name: Matt
 markdown: kramdown
+site.show_downloads: true
